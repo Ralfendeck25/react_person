@@ -1,0 +1,239 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-02T06:09:09.321Z",
+    "end": "2025-05-02T06:09:09.872Z",
+    "duration": 551,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "db21b91d-0cc5-41f9-994b-ebc294a55ef0",
+      "title": "",
+      "fullFile": "src\\components\\Person\\Person.spec.jsx",
+      "file": "src\\components\\Person\\Person.spec.jsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ba36d873-ff8c-4abc-be5c-d8f141a8cee3",
+          "title": "Person",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "70949253-aa11-4962-802e-d09227a2d739",
+              "title": "",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should print a name",
+                  "fullTitle": "Person  should print a name",
+                  "timedOut": null,
+                  "duration": 140,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(\".Person__name\").should(\"have.text\", \"My name is Misha\");",
+                  "err": {},
+                  "uuid": "a9015880-e4b7-40c4-a637-25e83d04bba3",
+                  "parentUUID": "70949253-aa11-4962-802e-d09227a2d739",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should print an age",
+                  "fullTitle": "Person  should print an age",
+                  "timedOut": null,
+                  "duration": 40,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(\".Person__age\").should(\"have.text\", \"I am 37\");",
+                  "err": {},
+                  "uuid": "4c3f7220-0d4d-4dc6-b927-5e35ab51086f",
+                  "parentUUID": "70949253-aa11-4962-802e-d09227a2d739",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should print a partner",
+                  "fullTitle": "Person  should print a partner",
+                  "timedOut": null,
+                  "duration": 39,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(\".Person__partner\").should(\"have.text\", \"Natasha is my wife\");",
+                  "err": {},
+                  "uuid": "5966633a-1cfd-488c-8851-e32293729376",
+                  "parentUUID": "70949253-aa11-4962-802e-d09227a2d739",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "a9015880-e4b7-40c4-a637-25e83d04bba3",
+                "4c3f7220-0d4d-4dc6-b927-5e35ab51086f",
+                "5966633a-1cfd-488c-8851-e32293729376"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 219,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "6d8d5cb9-f5ad-4cd1-a2e4-43f6616160ce",
+              "title": "",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should show partner as a husband when the person is female",
+                  "fullTitle": "Person  should show partner as a husband when the person is female",
+                  "timedOut": null,
+                  "duration": 62,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const olya = {\n  name: \"Olya\",\n  sex: \"f\",\n  age: 38,\n  isMarried: true,\n  partnerName: \"Maksym\"\n};\nmount(/* @__PURE__ */ jsxDEV(Person, { person: olya }, void 0, false, {\n  fileName: \"C:/Users/Peter/Documents/react_person/src/components/Person/Person.spec.jsx\",\n  lineNumber: 41,\n  columnNumber: 13\n}, this));\ncy.get(\".Person__partner\").should(\"have.text\", \"Maksym is my husband\");",
+                  "err": {},
+                  "uuid": "0c49371e-05e1-4f8a-b199-9a7d37e2edc1",
+                  "parentUUID": "6d8d5cb9-f5ad-4cd1-a2e4-43f6616160ce",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should show correct message if a person is not married",
+                  "fullTitle": "Person  should show correct message if a person is not married",
+                  "timedOut": null,
+                  "duration": 59,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const tanya = {\n  name: \"Tanya\",\n  sex: \"f\",\n  age: 28,\n  isMarried: false,\n  partnerName: \"Some Partner\"\n};\nmount(/* @__PURE__ */ jsxDEV(Person, { person: tanya }, void 0, false, {\n  fileName: \"C:/Users/Peter/Documents/react_person/src/components/Person/Person.spec.jsx\",\n  lineNumber: 55,\n  columnNumber: 13\n}, this));\ncy.get(\".Person__partner\").should(\"contain.text\", \"not married\");",
+                  "err": {},
+                  "uuid": "6a7cb908-4040-46e2-beb3-3895b431986b",
+                  "parentUUID": "6d8d5cb9-f5ad-4cd1-a2e4-43f6616160ce",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should not show age if age is omitted",
+                  "fullTitle": "Person  should not show age if age is omitted",
+                  "timedOut": null,
+                  "duration": 75,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const sasha = {\n  name: \"Sasha\",\n  sex: \"f\",\n  isMarried: false\n};\nmount(/* @__PURE__ */ jsxDEV(Person, { person: sasha }, void 0, false, {\n  fileName: \"C:/Users/Peter/Documents/react_person/src/components/Person/Person.spec.jsx\",\n  lineNumber: 67,\n  columnNumber: 13\n}, this));\ncy.get(\".Person__age\").should(\"not.exist\");",
+                  "err": {},
+                  "uuid": "d81385cf-232a-40ee-be3d-97a37ff11deb",
+                  "parentUUID": "6d8d5cb9-f5ad-4cd1-a2e4-43f6616160ce",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "0c49371e-05e1-4f8a-b199-9a7d37e2edc1",
+                "6a7cb908-4040-46e2-beb3-3895b431986b",
+                "d81385cf-232a-40ee-be3d-97a37ff11deb"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 196,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "raw_reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
